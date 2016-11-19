@@ -1,0 +1,150 @@
+@import 'font-awesome';
+
+.wp-fb-social-stream-spacer {
+	margin-top:25px;
+}
+.wp-fb-social-stream-customization th {
+	padding-top: 40px;
+	padding-bottom: 0px;
+}
+
+#wp-fb-social-stream-settings {
+	float: left;
+	width: 80%;
+}
+#wp-fb-social-stream-settings .clearer {
+	clear: both;
+}
+#wp-fb-social-stream-info {
+	float: right;
+	margin-top: 1em;
+	margin-left: 2%;
+	width: 17%;
+}
+@media (max-width: 782px) {
+	#wp-fb-social-stream-settings,
+	#wp-fb-social-stream-info {
+		float: none;
+		width: 100%;
+		margin-left: inherit;
+	}
+}
+#wp-fb-social-stream-info .wp-fb-social-stream-info-box {
+	background-color: #fff;
+	border: 2px solid #bbb;
+	padding-left: 20px;
+	padding-right: 10px;
+	margin-bottom: 30px;
+}
+#wp-fb-social-stream-info .wp-fb-social-stream-info-box ul li ul li {
+	padding-left: 20px;
+}
+
+#wp-fb-social-stream-info .wp-fb-social-stream-info-box .fa-coffee {
+	font-size: 18px;
+}
+
+@-webkit-keyframes blink {
+    from {
+        opacity: 1.0;
+    }
+    to {
+        opacity: 0.0;
+    }
+}
+#wp-fb-social-stream-info .blink {
+    -webkit-animation-name: blink;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: cubic-bezier(1.0, 0, 0, 1.0);
+    -webkit-animation-duration: 1s;
+}
+
+/*** extensions ***/
+/* tab */
+#nav-tab-extensions .update-plugins {
+    display: inline-block;
+    background-color: #d54e21;
+    color: #fff;
+    font-size: 9px;
+    line-height: 17px;
+    font-weight: 600;
+    margin: 1px 0 0 2px;
+    vertical-align: top;
+    border-radius: 10px;
+    z-index: 26;
+}
+#nav-tab-extensions .update-plugins .plugin-count {
+	display: block;
+	padding: 0 6px;
+    color: #fff;
+    font-size: 9px;
+    line-height: 17px;
+    font-weight: 600;
+}
+/* content */
+#fbss-extensions .fbss-extension-hl {
+	margin-bottom: 10px;
+}
+#fbss-extensions .fbss-extension-name {
+	font-weight: bold;
+	font-size: 16px;
+}
+#fbss-extensions .fbss-extension-desc {
+	font-style: italic;
+	margin-bottom: 5px;
+}
+
+/* installed */
+#fbss-extensions .fbss-extension-installed-item {
+	background-color: #fff;
+	border: 2px solid #bbb;
+	width: 80%;
+	padding: 20px;
+	margin-bottom: 40px;
+}
+#fbss-extensions .fbss-extension-installed-item .fbss-extension-license input[type=text] {
+	width: 70%;
+}
+#fbss-extensions .fbss-extension-installed-item .fbss-extension-license-inactive {
+	color: #e00000;
+}
+#fbss-extensions .fbss-extension-installed-item .fbss-extension-license-active {
+	color: #00CC00;
+}
+
+/* available  */
+#fbss-extensions .fbss-extension-available-item {
+	background-color: #fff;
+	border: 2px solid #bbb;
+	padding: 20px;
+	max-width: 200px;
+	margin-right: 40px;
+	margin-bottom: 40px;
+	float: left;
+}
+#fbss-extensions .fbss-extension-available-item .fbss-extension-img img {
+	-moz-box-shadow:    1px 1px 6px #848484;
+	-webkit-box-shadow: 1px 1px 6px #848484;
+	box-shadow:         1px 1px 6px #848484;
+	
+	-webkit-border-radius: 	2px;
+	-moz-border-radius: 	2px;
+	border-radius: 			2px;
+}
+#fbss-extensions .fbss-extension-available-item .fbss-extension-img img:hover {
+	-moz-box-shadow:    0px 0px 6px #0073aa;
+	-webkit-box-shadow: 0px 0px 6px #0073aa;
+	box-shadow:         0px 0px 6px #0073aa;
+}
+#fbss-extensions .fbss-extension-available-item .fbss-extension-name {
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+#fbss-extensions .fbss-extension-available-item .fbss-extension-desc {
+	margin-bottom: 10px;
+}
+#fbss-extensions .fbss-extension-available-item .fbss-extension-dl a {
+	width: 100%;
+	text-align: center;
+	font-weight: bold;
+}

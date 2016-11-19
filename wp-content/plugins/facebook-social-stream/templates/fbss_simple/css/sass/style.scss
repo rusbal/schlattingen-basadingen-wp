@@ -1,0 +1,181 @@
+@import 'font-awesome';
+
+/*** fbss_simple ***/
+.wp-fb-social-stream {
+	border: 1px solid #EDEDED;
+	padding: 25px;
+	word-wrap: break-word;
+}
+.wp-fb-social-stream .clearer {
+	clear: both;
+}
+
+.wp-fb-social-stream .fb-message {
+	margin: 20px 0px 20px 0px;
+}
+.wp-fb-social-stream .fb-message-spacer {
+	width: 80%;
+    margin: 50px auto 50px auto;
+    height: 1px;
+    background-color: #EDEDED;
+}
+.wp-fb-social-stream .fb-metadata {
+	margin-top: 5px;
+	padding: 5px;
+}
+
+.wp-fb-social-stream .fb-info {
+	margin-bottom: 20px;
+}
+.wp-fb-social-stream .fb-info .fb-user-img,
+.wp-fb-social-stream .fb-info .fb-user-img img {
+	float: left;
+	width: 50px;
+	height: 50px;
+}
+.wp-fb-social-stream .fb-info .fb-message-data {
+	float: left;
+	padding-left: 20px;
+}
+@media (max-width: 500px) {
+	.wp-fb-social-stream .fb-info .fb-user-img {
+		width: 15%;
+	}
+	.wp-fb-social-stream .fb-info .fb-message-data {
+		width: 85%;	
+	}
+}
+
+
+.wp-fb-social-stream .fb-info .fb-message-data .fb-message-data-page-name {
+	font-weight: bold;
+}
+.wp-fb-social-stream .fb-info .fb-message-data .fb-message-date {
+	font-size: small;
+	color: #848484;
+}
+
+.wp-fb-social-stream .fb-message-text {
+	padding-bottom: 20px;
+}
+
+.wp-fb-social-stream .fb-message-wrap .fb-message-image img,
+.wp-fb-social-stream .fb-message-video video {
+	width: 100%;
+}
+
+/* linkbox && eventbox */
+.wp-fb-social-stream .fb-message-linkbox,
+.wp-fb-social-stream .fb-message-eventbox {
+	padding: 20px;
+	margin-bottom: 10px;
+	cursor: pointer;
+	border: 1px solid #EDEDED;
+	background-color: #FAFAFA;
+}
+.wp-fb-social-stream .fb-message-linkbox-img,
+.wp-fb-social-stream .fb-message-eventbox-img {
+	float: left;
+	width: 20%;
+}
+.wp-fb-social-stream .fb-message-linkbox-img img,
+.wp-fb-social-stream .fb-message-eventbox-img img {
+	max-width: 100%;
+	height: auto;
+}
+.wp-fb-social-stream .fb-message-linkbox-txt,
+.wp-fb-social-stream .fb-message-eventbox-txt {
+	float: right;
+	width: 100%;
+}
+.wp-fb-social-stream .fb-message-linkbox-img + .fb-message-linkbox-txt,
+.wp-fb-social-stream .fb-message-eventbox-img + .fb-message-eventbox-txt {
+	margin-left: 5%;
+	width: 75%;
+}
+
+.wp-fb-social-stream .fb-message-linkbox-name,
+.wp-fb-social-stream .fb-message-eventbox-name {
+	font-weight: bold;
+}
+.wp-fb-social-stream .fb-message-linkbox-desc,
+.wp-fb-social-stream .fb-message-eventbox-desc {
+	font-size: smaller;
+}
+.wp-fb-social-stream .fb-message-linkbox-caption {
+	margin-top: 10px;
+	font-size: smaller;
+}
+.wp-fb-social-stream .fb-message-eventbox-date {
+	padding-top: 10px;
+	font-size: smaller;
+	font-style: italic;
+}
+
+.wp-fb-social-stream .fb-message-wrap:after {
+	content: '';
+	position: absolute;
+	border-style: solid;
+	border-width: 13px 14px 13px 0;
+	border-color: transparent #EDEDED;
+	display: block;
+	width: 0;
+	z-index: 1;
+	left: -14px;
+	top: 9px;
+}
+
+/* video */
+.wp-fb-social-stream .fb-message-video video {
+	width: 100%;		
+}
+.wp-fb-social-stream .fb-message-video-name,
+.wp-fb-social-stream .fb-message-video-desc {
+	font-size: smaller;
+}
+
+.wp-fb-social-stream .fb-message-video-linkbox {
+	padding: 20px;
+	margin-bottom: 10px;
+	cursor: pointer;
+	border: 1px solid #EDEDED;
+	background-color: #FAFAFA;
+}
+.wp-fb-social-stream .fb-message-video-linkbox .fb-message-video-img-wrapper {
+	cursor: pointer;
+	float: left;
+	width: 20%;
+}
+
+.wp-fb-social-stream .fb-message-video-linkbox .fb-message-video-img {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+.wp-fb-social-stream .fb-message-video-linkbox .fb-message-video-img img {
+	max-width: 100%;
+	height: auto;
+}
+.wp-fb-social-stream .fb-message-video-linkbox .fb-message-video-img .fa-play-circle {
+	color: #fff;
+	font-size: 40px;
+	position: absolute;
+	top: 30%;
+	left: 30%;
+	bottom: 0;
+	right: 0;
+	opacity: 0.7;
+}
+
+.wp-fb-social-stream .fb-message-video-linkbox .fb-message-video-img .fa-play-circle:hover {
+	opacity: 0.85;
+}
+.wp-fb-social-stream .fb-message-video-linkbox .fb-message-video-txt {
+	float: right;
+	margin-left: 5%;
+	width: 75%;
+}
+.wp-fb-social-stream .fb-message-video-linkbox .fb-message-video-name {
+	font-size: inherit;
+	font-weight: bold;
+}

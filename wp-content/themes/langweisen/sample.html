@@ -1,0 +1,939 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Blickpunkt Chammerholz, Wermatswil &bull; Blickpunkt Lebensraum</title>
+    <meta name="description" content=""/>
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=yes,maximum-scale=2"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="keywords"
+          content="Immobilien, Eigentumswohnungen, Eigentumswohnung, Haus kaufen, Zürcher Oberland, Bauberatung, beratung in baufragen, bauprojekte, neubauten, umbauten Wohnungen, Wohnung, Immobilienangebote, www immobilien, Wohnungen mieten, Wohnungen Immobilien, Wohnung mieten, Wohnimmobilien, Treuhand Immobilien, Neubauten, Mietspiegel"/>
+    <meta name="robots" content="index,follow"/>
+    <meta name="revisit-after" content="7 days"/>
+    <meta name="author" content="Blickpunkt Lebensraum AG, Uster, www.blickpunkt-lebensraum.ch"/>
+    <meta name="publisher" content="fresh interactive AG, Uster-Zürich, www.fia.ch"/>
+    <meta name="rating" content="General"/>
+    <link rel="shortcut icon" href="/favicon.ico?v=2">
+
+    <script type="text/javascript" src="//use.typekit.net/zwt4qvi.js"></script>
+    <script type="text/javascript">try {
+        Typekit.load();
+    } catch (e) {
+    }</script>
+
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link href="/_css/style.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/_css/print.css" rel="stylesheet" type="text/css" media="print">
+    <link rel="stylesheet" href="/_js/flexSlider/flexslider.css" type="text/css">
+    <link rel="stylesheet" href="/_js/fancybox/jquery.fancybox-1.3.1.css" type="text/css" media="screen">
+
+    <script type="text/javascript" src="/_js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="/_js/flexSlider/jquery.flexslider-min.js"></script>
+    <script type="text/javascript" src="/_js/jquery-ui-1.10.3.custom.min.js"></script>
+    <script type="text/javascript" src="/_js/smoothscroll.js"></script>
+    <script type="text/javascript" src="/_js/jquery.rwdImageMaps.min.js"></script>
+    <script type="text/javascript" src="/_js/fancybox/jquery.fancybox-1.3.1.pack.js"></script>
+    <script type='text/javascript'>
+
+        $(document).ready(function () {
+            if (window.navigator.standalone == false) {
+                window.scrollTo(0, 1);
+            }
+
+            // Responsive Imagemaps
+            $('img[usemap]').rwdImageMaps();
+
+            // Rollover Objekt-Box
+            $('.objectSmall, .objectLarge, .objectXLarge, .objectTeam').mouseenter(function () {
+                $(this).toggleClass('objectAktiv');
+                // Bildgrösse Auslesen
+                var width = $(this).find('.objectImage img').width();
+                var height = $(this).find('.objectImage img').height();
+                // Overlay resizen
+                $(this).find('.objectText').css('width', width);
+                // ein-/ausblenden
+                if ($(this).find('.objectTextContent').text() != '') {
+                    $(this).find('.objectText').stop().animate({
+                                "height": height,
+                                "width": width
+                            },
+                            450,
+                            "swing"
+                    );
+                }
+                ;
+
+                // Textbox Höhe auslesen, einmitten
+                var heightContent = $(this).find('.objectTextContent').height();
+                var heightPadding = ((height - heightContent) / 2) - 15;
+                $(this).find('.objectTextContent').css('margin-top', heightPadding);
+            });
+
+            $('.objectSmall, .objectLarge, .objectXLarge, .objectTeam').mouseleave(function () {
+                $(this).toggleClass('objectAktiv');
+                // Bildgrösse Auslesen
+                var width = $(this).find('.objectImage img').width();
+                var height = $(this).find('.objectImage img').height();
+                // Overlay resizen
+                $(this).find('.objectText').css('width', width);
+                // ein-/ausblenden
+                $(this).find('.objectText').stop().animate({
+                            "height": 0,
+                            "width": width
+                        },
+                        450,
+                        "swing"
+                );
+            });
+            // Link auf ganze Objekt-Box anwenden
+            $('.objectSmall, .objectLarge, .objectXLarge, .objectTeam').click(function () {
+                var url = $(this).find("a").attr('href');
+                var textHeight = $(this).find('.objectText').height();
+                if ($(this).find('.objectTextContent').text() != '') {
+                    if (textHeight > 1) {
+                        if ($(this).find("a").attr('target') == '_blank') {
+                            window.open(url, '_blank');
+                            return false;
+                        } else {
+                            window.open(url, '_self');
+                            return false;
+                        }
+                    } else {
+                        return false;
+                    }
+                } else {
+                    if ($(this).find("a").attr('target') == '_blank') {
+                        window.open(url, '_blank');
+                        return false;
+                    } else {
+                        window.open(url, '_self');
+                        return false;
+                    }
+                }
+            });
+            // Preislisten Link auf tr anwenden
+            $('.preisliste tr, .preislisteMobile tr').click(function () {
+                var url = $(this).find("a").attr('href');
+                if (url) {
+                    window.open(url + '#view=fit', '_blank');
+                    return false;
+                }
+            });
+
+            // externe Links in _blank öffnen
+            $('a').filter(function () {
+                //Compare the anchor tag's host name with location's host name
+                return this.hostname && this.hostname !== location.hostname;
+            }).attr("target", "_blank");
+
+            // externe Links in _blank öffnen
+            $('a').filter(function () {
+                //Compare the anchor tag's host name with location's host name
+                return this.hostname && this.hostname !== location.hostname;
+            }).attr("target", "_blank");
+
+            // pdf in _blank öffnen
+            $("a[href$='.pdf']").attr("target", "_blank");
+
+            // flex Slider
+            $('.flexslider').flexslider({
+                animation: "slide",
+                prevText: "Previous",
+                nextText: "Next",
+                pauseOnHover: true,
+                touch: true,
+                controlNav: false,
+                directionNav: true
+            });
+
+            $("ul.galerie li:nth-child(5n)").addClass('element5');
+
+            $("a.lightbox").fancybox({
+                'titleShow': false,
+                'scrolling': 'no',
+                'overlayOpacity': 0.8,
+                'overlayColor': '#000'
+            });
+
+            $("a.movie").fancybox({
+                'titleShow': false,
+                'scrolling': 'no',
+                'overlayOpacity': 0.8,
+                'overlayColor': '#000',
+                'type': 'iframe',
+                'width': 660,
+                'height': 420,
+                'margin': 0,
+                'padding': 0
+            });
+        });
+
+
+        $(window).resize(function () {
+
+            // Overlay-Text Objektboxen in der Grösse anpassen an das Bild
+            $(".objectSmall").each(function () {
+                var widthSmall = $(this).find('.objectImage img').width();
+                var heightSmall = $(this).find('.objectImage img').height();
+                if ($(this).find('.objectText').height() > 1) {
+                    $(this).find('.objectText').css('width', widthSmall).css('height', heightSmall);
+                } else {
+                    $(this).find('.objectText').css('width', widthSmall);
+                }
+            });
+
+            $(".objectLarge").each(function () {
+                var widthLarge = $(this).find('.objectImage img').width();
+                var heightLarge = $(this).find('.objectImage img').height();
+                if ($(this).find('.objectText').height() > 1) {
+                    $(this).find('.objectText').css('width', widthLarge).css('height', heightLarge);
+                } else {
+                    $(this).find('.objectText').css('width', widthLarge);
+                }
+            });
+
+            $(".objectXLarge").each(function () {
+                var widthXLarge = $(this).find('.objectImage img').width();
+                var heightXLarge = $(this).find('.objectImage img').height();
+                if ($(this).find('.objectText').height() > 1) {
+                    $(this).find('.objectText').css('width', widthXLarge).css('height', heightXLarge);
+                } else {
+                    $(this).find('.objectText').css('width', widthXLarge);
+                }
+            });
+
+            $(".objectTeam").each(function () {
+                var widthTeam = $(this).find('.objectImage img').width();
+                var heightTeam = $(this).find('.objectImage img').height();
+                if ($(this).find('.objectText').height() > 1) {
+                    $(this).find('.objectText').css('width', widthTeam).css('height', heightTeam);
+                } else {
+                    $(this).find('.objectText').css('width', widthTeam);
+                }
+            });
+
+        });
+    </script>
+    <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-35886209-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script');
+            ga.type = 'text/javascript';
+            ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ga, s);
+        })();
+
+    </script>
+</head>
+
+<body>
+<div id="outWrap">
+    <div id="wrap">
+        <section id="header">
+            <div id="logo"><a href="/">Blickpunkt Lebensraum</a></div>
+
+            <nav id="headerNav">
+                <ul>
+                    <li><a href="/news2015.php">News</a></li>
+                    <li><a href="/kontakt.php">Kontakt</a></li>
+                    <li><a href="/engagements.php">Engagements</a></li>
+                    <li><a href="/impressum.php" id="navImpressum">Impressum</a></li>
+                    <li><a href="javascript:window.print();" id="navDrucken">Drucken</a></li>
+                    <li><a href="/suche.php" id="navSuche">Suche</a></li>
+                    <li><a href="/sitemap.php" id="navSitemap">Sitemap</a></li>
+                </ul>
+            </nav><!-- #headerNav -->
+
+
+            <nav id="mainNav">
+                <ul>
+                    <li><a href="/dienstleistungen.php">Dienstleistungen</a></li>
+                    <li><a href="/entwicklungen.php">Entwicklungen</a></li>
+                    <li><a href="/angebot.php" class="aktiv">Angebote</a></li>
+                    <li><a href="/referenzen.php">Referenzen</a></li>
+                    <li><a href="/unternehmen.php">Unternehmen</a></li>
+                </ul>
+            </nav><!-- #mainNav -->
+
+            <div class="clear"></div>
+        </section><!-- #header -->
+        <div id="logoPrint"><img src="/_images/logo.png" width="150" height="40" alt="Blickpunkt Lebensraum"></div>
+
+        <section class="content slider">
+
+            <div class="cycle">
+                <div class="flexslider">
+                    <ul class="slides">
+                        <li><img src="/__we_thumbs__/3197_7_01.jpg" alt="" width="980" height="490"/></li>
+                        <li><img src="/__we_thumbs__/3198_7_02.jpg" alt="" width="980" height="490"/></li>
+                        <li><img src="/__we_thumbs__/3199_7_03.jpg" alt="" width="980" height="490"/></li>
+                        <li><img src="/__we_thumbs__/3200_7_04.jpg" alt="" width="980" height="490"/></li>
+                        <li><img src="/__we_thumbs__/3201_7_05.jpg" alt="" width="980" height="490"/></li>
+                        <li><img src="/__we_thumbs__/3202_7_06.jpg" alt="" width="980" height="490"/></li>
+                        <li><img src="/__we_thumbs__/3203_7_07.jpg" alt="" width="980" height="490"/></li>
+                        <li><img src="/__we_thumbs__/3204_7_08.jpg" alt="" width="980" height="490"/></li>
+                        <li><img src="/__we_thumbs__/3205_7_09.jpg" alt="" width="980" height="490"/></li>
+                    </ul>
+                </div><!-- .flexslider -->
+            </div><!-- .cycle -->
+
+
+        </section><!-- .content -->
+
+        <section class="content noline">
+            <h1>Vier architektonisch herausragende Häuser mitten im Naturraum in Wermatswil</h1></section>
+
+        <section class="content projekt">
+            <article class="zweispalten">
+                <p>An der Chammerholzstrasse, direkt an ein Waldstück angrenzend, wich eine herrschaftliche Villa aus
+                    den 60er-Jahren einem exklusiven Blickpunkt. Bestehen bleibt der parkartige Garten mit rund 1'260 m2
+                    Gartenanteil und ein Privatwald von 1'670 m2. Ein besonderer Ort für Menschen, die im Einklang leben
+                    wollen – in einem intakten Naturraum mit hochwertiger Architektur.<br/><br/>Das markante Gebäude
+                    besteht aus gesamthaft vier separaten Einheiten mit bis zu vier Etagen. Die Grundrisse der 4 ½- bis
+                    6 ½-Zimmer-Häuser mit grosszügigen 186 bis 226 m2 Wohnflächen ordnen sich an um die Lichthöfe,
+                    welche das Sonnenlicht schon am Morgen zu den Wohn-, Koch- und Essräumen führen. Die Sitzplätze und
+                    Balkone eröffnen durch die Ost-West-Ausrichtung einen fantastischen Wald- und Bergblick oder laden
+                    zum gehobenen Entspannen ein.<br/><br/><a
+                            href="http://www.swiss-architects.com/de/projects/52193_Blickpunkt_Chammerholz"
+                            target="_blank">"Blickpunkt Chammerholz" - zum Bau der Woche gekürt</a></p>
+                <p>&nbsp;</p>
+            </article>
+
+            <article class="zweispalten">
+                <p>Standort: Chammerholzstrasse 35/37/39/41, 8615 Wermatswil<br/>Hauptnutzfläche: 185.5 bis 225.5
+                    m2<br/>Nebennutzfläche: 54.5 bis 65.3 m2<br/>Aussennutzfläche: Balkone 21.5 bis 51.8 m2, Garten
+                    inkl. Sitzplatz 142.7 bis 460.0 m2<br/>Baujahr: 2014/2015<br/>Verfügbar ab: sofort<br/>Angebot: 1 x
+                    4 ½-Zimmer-Haus, 2 x 5 ½-Zimmer-Haus, <br/>1 x 6 ½-Zimmer-Haus<br/>Preis: CHF 1'615'000.- bis
+                    2'350'000.-, Doppelgarage CHF 80'000.-</p>
+                <p>&nbsp;</p>
+            </article>
+        </section><!-- .content .spalten -->
+
+
+        <script type='text/javascript'>
+            $(document).ready(function () {
+
+                // Accordion
+                $('.accordion').accordion({
+                    active: true, header: ".newsHeader",
+                    collapsible: true,
+                    heightStyle: "content",
+                    navigation: true,
+                    activate: function (event, ui) {
+                        // Responsive Imagemaps
+                        $('img[usemap]').rwdImageMaps();
+                        // zum Header scrollen
+                        var topAnchor = $(this).offset().top;
+                        $('html,body').animate({scrollTop: topAnchor}, 250);
+                        return false;
+                    }
+                });
+
+            });
+        </script>
+        <section class="content accordion projektaccordion mehrRight">
+
+
+            <article>
+                <div class="newsHeader">
+                    <h1>Die Grundrisse</h1>
+                    <div class="erfahren">mehr erfahren</div>
+                </div><!-- .newsHeader -->
+                <div class="newsContent">
+                    <script type='text/javascript'>
+                        $(document).ready(function () {
+                            // rollover Tabelle
+                            $('.schema td.button').hover(function () {
+                                var haus = $(this).text();
+                                $('.schema td').removeClass('hausAktiv');
+                                $('.schema td').removeClass('aktiv');
+                                $('.schema td.' + haus).addClass('hausAktiv');
+                                $('#situation img').attr('src', '/_images/projekte/chammerholz/schema/' + haus + '.jpg');
+                                if (haus == 'a35') {
+                                    $('.schema td.' + haus).addClass('aktiv');
+                                }
+                            });
+                            // pdf-Grundrisse öffnen
+                            $('.schema td.button').click(function () {
+                                var url = $(this).find("a").attr('href');
+                                if (url) {
+                                    window.open(url + '#view=fit', '_blank');
+                                    return false;
+                                }
+                            });
+                            // Rollover Situationsgrafik
+                            $('#situation area').hover(function () {
+                                var haus = $(this).attr('alt');
+                                var schema = $(this).attr('rel');
+                                $('#situation img').attr('src', '/_images/projekte/chammerholz/schema/' + haus + '.jpg');
+                                $('.schema td').removeClass('hausAktiv');
+                                $('.schema td').removeClass('aktiv');
+                                $('.schema td.' + haus).addClass('hausAktiv');
+                            });
+                        });
+                    </script>
+                    <style type="text/css">
+                        .schemata {
+                            min-height: 130px;
+                        }
+
+                        table#schemaA {
+                            display: inherit;
+                        }
+
+                        #schemaA td {
+                            min-width: 60px;
+                        }
+
+                        #schemaA td.button {
+                            width: 20%;
+                        }
+                    </style>
+                    <div id="situation">
+                        <p><img src="/_images/projekte/chammerholz/schema/neutral.jpg" usemap="#Map">
+                            <map name="Map">
+                                <area shape="rect" coords="451,242,661,288" alt="a41" href="#">
+                                <area shape="rect" coords="450,289,709,338" href="#" alt="a39">
+                                <area shape="rect" coords="452,339,754,394" href="#" alt="a37">
+                                <area shape="rect" coords="539,396,754,436" href="#" alt="a35">
+                            </map>
+                        </p>
+                    </div><!-- #situation -->
+                    <div class="schemata">
+                        <table class="schema" id="schemaA">
+                            <tr>
+                                <td>DG</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td rowspan="4" class="a41 button"><a href="/_grundrisse/chammerholz/haus41.pdf"
+                                                                      target="_blank">a41</a></td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>OG</td>
+                                <td rowspan="3" class="a35 button"><a href="/_grundrisse/chammerholz/haus35.pdf"
+                                                                      target="_blank">a35</a></td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td rowspan="3" class="a39 button"><a href="/_grundrisse/chammerholz/haus39.pdf"
+                                                                      target="_blank">a39</a></td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>EG</td>
+                                <td>&nbsp;</td>
+                                <td rowspan="2" class="a37 button"><a href="/_grundrisse/chammerholz/haus37.pdf"
+                                                                      target="_blank">a37</a></td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>UG</td>
+                                <td>Nr. 35</td>
+                                <td>Nr. 37</td>
+                                <td>Nr. 39</td>
+                                <td>Nr. 41</td>
+                            </tr>
+                        </table>
+                    </div><!-- .schemata -->
+                    <p>&nbsp;</p>
+                    <p><strong>Haus 35</strong><br/>5½ Zimmer, HNF : 218.3 m2, NNF : 64.3 m2<br/>ANF : 51.8 m2, Garten
+                        inkl. Sitzplatz 449.4 m2<br/>Im UG/EG/OG<br/><br/><strong>Haus 37</strong><br/>4½ Zimmer, HNF :
+                        185.5 m2, NNF : 59.0 m2<br/>Garten inkl. Sitzplatz 208.9 m2<br/>Im UG/EG<br/><br/><strong>Haus
+                            39</strong><br/>5½ Zimmer, HNF : 208.8 m2, NNF : 54.5 m2<br/>ANF : 26 m2, Garten inkl.
+                        Sitzplatz 142.7 m2<br/>Im UG/EG/OG<br/><br/><strong>Haus 41</strong><br/>6½ Zimmer, HNF : 225.5
+                        m2, NNF : 65.3 m2,<br/>ANF : 21.5 m2, Garten inkl. Sitzplatz 460 m2<br/>Im UG/EG/OG/DG<br/><br/>
+                    </p></p>
+                    <p>&nbsp;</p></div><!-- .newsContent -->
+            </article>
+
+
+            <article>
+                <div class="newsHeader">
+                    <h1>Die Preise</h1>
+                    <div class="erfahren">mehr erfahren</div>
+                </div><!-- .newsHeader -->
+                <div class="newsContent">
+                    <h4>Chammerholz</h4>
+                    <table border="0" cellspacing="0" cellpadding="0" class="preisliste">
+                        <colgroup>
+                            <col style="width:12.5%;">
+                            <col style="width:10%;">
+                            <col style="width:15%;">
+                            <col style="width:15.5%;">
+                            <col style="width:27%;">
+                            <col style="width:20%;">
+                        </colgroup>
+                        <tr>
+                            <td>UG/EG/OG</td>
+                            <td>Nr. 35</td>
+                            <td><a href="/_grundrisse/chammerholz/haus35.pdf" target="_blank">
+                                5 1/2-Zimmer </a></td>
+                            <td>218.3 m2 HNF<br/>64.3 m2 NNF&nbsp;&nbsp;</td>
+                            <td>51.8 m2 ANF (Balkone)<br/>449.4 m2 Garten inkl. Sitzplatz&nbsp;&nbsp;</td>
+                            <td class="last preis"> Fr. 2'090'000.- &nbsp;&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>UG/EG</td>
+                            <td>Nr. 37</td>
+                            <td><a href="/_grundrisse/chammerholz/haus37.pdf" target="_blank">
+                                4 1/2-Zimmer </a></td>
+                            <td>185.5 m2 HNF<br/>59.0 m2 NNF&nbsp;&nbsp;</td>
+                            <td>208.9 m2 Garten inkl. Sitzplatz&nbsp;&nbsp;</td>
+                            <td class="last preis"> Fr. 1'615'000.- &nbsp;&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>UG/EG/OG</td>
+                            <td>Nr. 39</td>
+                            <td><a href="/_grundrisse/chammerholz/haus39.pdf" target="_blank">
+                                5 1/2-Zimmer </a></td>
+                            <td>208.8 m2 HNF<br/>54.5 m2 NNF&nbsp;&nbsp;</td>
+                            <td>26.0 m2 ANF (Balkone)<br/>142.7 m2 Garten inkl. Sitzplatz&nbsp;&nbsp;</td>
+                            <td class="last preis"> Fr. 1'715'000.- &nbsp;&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>UG/EG/OG/DG</td>
+                            <td>Nr. 41</td>
+                            <td><a href="/_grundrisse/chammerholz/haus41.pdf" target="_blank">
+                                6 1/2-Zimmer </a></td>
+                            <td>225.5 m2 HNF<br/>65.3 m2 NNF&nbsp;&nbsp;</td>
+                            <td>21.5 m2 ANF (Balkone)<br/>460.0 m2 Garten inkl. Sitzplatz&nbsp;&nbsp;</td>
+                            <td class="last preis"> Fr. 2'350'000.- &nbsp;&nbsp;</td>
+                        </tr>
+                    </table>
+                    <table border="0" cellspacing="0" cellpadding="0" class="preislisteMobile">
+                        <tr>
+                            <td>Nr. 35</td>
+                            <td colspan="2">
+                                <a href="/_grundrisse/chammerholz/haus35.pdf" target="_blank">5 1/2-Zimmer</a>
+                            </td>
+                        </tr>
+                        <tr class="even">
+                            <td>UG/EG/OG</td>
+                            <td>218.3 m2 HNF<br/>64.3 m2 NNF</td>
+                            <td class="last preis">
+                                Fr. 2'090'000.-
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Nr. 37</td>
+                            <td colspan="2">
+                                <a href="/_grundrisse/chammerholz/haus37.pdf" target="_blank">4 1/2-Zimmer</a>
+                            </td>
+                        </tr>
+                        <tr class="even">
+                            <td>UG/EG</td>
+                            <td>185.5 m2 HNF<br/>59.0 m2 NNF</td>
+                            <td class="last preis">
+                                Fr. 1'615'000.-
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Nr. 39</td>
+                            <td colspan="2">
+                                <a href="/_grundrisse/chammerholz/haus39.pdf" target="_blank">5 1/2-Zimmer</a>
+                            </td>
+                        </tr>
+                        <tr class="even">
+                            <td>UG/EG/OG</td>
+                            <td>208.8 m2 HNF<br/>54.5 m2 NNF</td>
+                            <td class="last preis">
+                                Fr. 1'715'000.-
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Nr. 41</td>
+                            <td colspan="2">
+                                <a href="/_grundrisse/chammerholz/haus41.pdf" target="_blank">6 1/2-Zimmer</a>
+                            </td>
+                        </tr>
+                        <tr class="even">
+                            <td>UG/EG/OG/DG</td>
+                            <td>225.5 m2 HNF<br/>65.3 m2 NNF</td>
+                            <td class="last preis">
+                                Fr. 2'350'000.-
+                            </td>
+                        </tr>
+                    </table>
+                    <p>&nbsp;</p>
+                    <p>Doppelgarage: CHF 80'000.–<br/>&nbsp;<br/><strong>Hauptnutzfläche (HNF)</strong><br/>Die
+                        Flächenangaben in der Preisliste und der Dokumentation sind mit der Hauptnutzfläche (HNF)
+                        bezeichnet. Das bedeutet: Netto-Nutzfläche ohne Wände, inkl. Réduits.<br/><strong>Nebennutzfläche
+                            (NNF)</strong> <br/>Die Nebennutzflächen sind in der Preisliste und der Dokumentation mit
+                        (NNF) bezeichnet. Das beinhaltet sämtliche Flächen von Garagen und Kellerräumen
+                        kumuliert.<br/><strong>Aussennutzfläche (ANF)</strong><br/>Die Aussenflächen in der Preisliste
+                        und der Dokumentation sind mit der Aussennutzfläche (ANF) bezeichnet. Das beinhaltet sämtliche
+                        Aussenflächen von Garten, Loggien und/oder Terrassen kumuliert.</p>
+                    <p>&nbsp;</p>
+                </div><!-- .newsContent -->
+            </article>
+
+
+            <script type='text/javascript'>
+                $(document).ready(function () {
+
+                    // Pfad Lageplan in Var schreiben
+                    var src = $('#lage').attr('src');
+
+                    // Lageplan austauschen
+                    $('.info a').click(function () {
+                        if ($(this).hasClass('notChecked') == true) {
+                            $('#lage').attr('src', src);
+                            $(this).removeClass('notChecked');
+                            return false;
+                        } else {
+                            $('#lage').attr('src', $(this).attr('rel'));
+                            $(this).addClass('notChecked');
+                            return false;
+                        }
+                    });
+                    $('.zoom a').click(function () {
+                        var src2 = $('#lage').attr('src');
+                        var src3 = $(this).attr('rel');
+                        if (src2 != src3) {
+                            $('#lage').attr('src', src3);
+                            return false;
+                        } else {
+                            if ($('.info a').hasClass('notChecked') == true) {
+                                $('#lage').attr('src', $('.info a').attr('rel'));
+                                return false;
+                            } else {
+                                $('#lage').attr('src', src);
+                                return false;
+                            }
+                        }
+                    });
+
+                });
+            </script>
+            <article>
+                <div class="newsHeader">
+                    <h1>Die Lage</h1>
+                    <div class="erfahren">mehr erfahren</div>
+                </div><!-- .newsHeader -->
+                <div class="newsContent">
+                    <p>Der Blickpunkt Chammerholz liegt direkt an ein Waldgebiet angrenzend am Dorfrand von Wermatswil.
+                        Das Dorf selber befindet sich nordöstlich von Uster an einer ausgezeichneten Hanglage zwischen
+                        dem Greifen- und Pfäffikersee. Mit rund 1’000 Einwohnern hat das kleine Dorf seinen ganz
+                        speziellen Charakter. Ein Dorfladen, eine Weingalerie und ein gemütliches Restaurant bilden den
+                        Kern der Gemeinde. <br/><br/>Fernab von Verkehr und Hektik der Stadt braucht man in Wermatswil
+                        von der Haustür bis ins Grüne nur wenige Schritte. Herrliche Landschaften laden zu
+                        Spaziergängen, Wanderungen oder Fahrradfahrten ein. Und die nur wenige Minuten entfernten
+                        Gemeinden Uster (über 33'000 Einwohner) und Päffikon (über 10'000 Einwohner) bieten die
+                        komplette städtische Infrastruktur. Und dank der nahen Autobahn und den guten,
+                        viertelstündlichen Zugverbindungen ab Uster sind auch die Stadt Zürich und Umgebung in
+                        unmittelbarer Reichweite.</p>
+                    <p>&nbsp;</p>
+                    <div class="lageplan"><img src="/images/projekte/chammerholz/chammerholz_mit.jpg" alt="Lageplan"
+                                               id="lage"></div>
+                    <p class="info"><a href="#" rel="/images/projekte/chammerholz/chammerholz_ohne.jpg">Informationen
+                        einblenden</a></p>
+                    <p class="zoom"><a href="#" rel="/images/projekte/chammerholz/chammerholz_zoom.jpg">Lage zoomen</a>
+                    </p>
+                    <div class="clear"></div>
+                    <p>&nbsp;</p>
+                </div><!-- .newsContent -->
+            </article>
+
+
+            <article>
+                <div class="newsHeader">
+                    <h1>Die Architekten</h1>
+                    <div class="erfahren">mehr erfahren</div>
+                </div><!-- .newsHeader -->
+                <div class="newsContent">
+                    <p>moos giuliani herrmann architekten sind ein Team von 30 Mitarbeitern an vier Standorten in Uster,
+                        Diessenhofen, Andelfingen und Schauffhausen. In seiner 17-jährigen Tätigkeit hat das
+                        Architekturbüro ein breites Spektrum an Bauten realisiert. Drei wurden mit dem Baupreis des
+                        Architekturforums Zürcher Oberland ausgezeichnet, eines mit dem Thurgauer Energiepreis. Von
+                        Umbauten über Neubauten, von Einfamilienhäusern bis zur Umnutzung historischer
+                        Baumwollspinnereien in Lofts. moos giuliani herrmann architekten stehen für hochwertige Wohn-
+                        und Baukultur.</p>
+                    <p>&nbsp;</p>
+                </div><!-- .newsContent -->
+            </article>
+
+
+            <article>
+                <div class="newsHeader">
+                    <h1>Die Services</h1>
+                    <div class="erfahren">mehr erfahren</div>
+                </div><!-- .newsHeader -->
+                <div class="newsContent">
+                    <p><a href="/projekte/chammerholz/issuu.php" target="_blank">E-Broschüre</a></p>
+                    <p>
+                        <a href="mailto:?subject=Dieses%20Objekt%20könnte%20dich%20interessieren&amp;body=http://www.blickpunkt-lebensraum.ch/projekte/chammerholz/index.php">Weiter
+                            empfehlen</a></p>
+                    <p>
+                        <a href="http://www.facebook.com/share.php?u=http%3A%2F%2Fwww.blickpunkt-lebensraum.ch%2Fprojekte%2Fchammerholz%2Findex.php"
+                           target="_blank">Auf Facebook posten</a></p>
+                    <p>&nbsp;</p>
+                </div><!-- .newsContent -->
+            </article>
+
+
+            <article>
+                <div class="newsHeader">
+                    <h1>Die Galerie</h1>
+                    <div class="erfahren">mehr erfahren</div>
+                </div><!-- .newsHeader -->
+                <div class="newsContent">
+                    <p>&nbsp;</p>
+
+                    <script type='text/javascript'>
+                        $(document).ready(function () {
+                            $("ul.galerie li:nth-child(5n)").addClass('element5');
+                        });
+                    </script>
+                    <ul class="galerie">
+                        <li><a href="/images/zukuenftiges/chammerholz/slider/01.jpg" target="_blank" rel="galerie"
+                               class="lightbox"><img src="/__we_thumbs__/3197_12_01.jpg" alt="" width="180"
+                                                     height="115"/></a></li>
+                        <li><a href="/images/zukuenftiges/chammerholz/slider/02.jpg" target="_blank" rel="galerie"
+                               class="lightbox"><img src="/__we_thumbs__/3198_12_02.jpg" alt="" width="180"
+                                                     height="115"/></a></li>
+                        <li><a href="/images/zukuenftiges/chammerholz/slider/03.jpg" target="_blank" rel="galerie"
+                               class="lightbox"><img src="/__we_thumbs__/3199_12_03.jpg" alt="" width="180"
+                                                     height="115"/></a></li>
+                        <li><a href="/images/zukuenftiges/chammerholz/slider/04.jpg" target="_blank" rel="galerie"
+                               class="lightbox"><img src="/__we_thumbs__/3200_12_04.jpg" alt="" width="180"
+                                                     height="115"/></a></li>
+                        <li><a href="/images/zukuenftiges/chammerholz/slider/05.jpg" target="_blank" rel="galerie"
+                               class="lightbox"><img src="/__we_thumbs__/3201_12_05.jpg" alt="" width="180"
+                                                     height="115"/></a></li>
+                        <li><a href="/images/zukuenftiges/chammerholz/slider/06.jpg" target="_blank" rel="galerie"
+                               class="lightbox"><img src="/__we_thumbs__/3202_12_06.jpg" alt="" width="180"
+                                                     height="115"/></a></li>
+                        <li><a href="/images/zukuenftiges/chammerholz/slider/07.jpg" target="_blank" rel="galerie"
+                               class="lightbox"><img src="/__we_thumbs__/3203_12_07.jpg" alt="" width="180"
+                                                     height="115"/></a></li>
+                        <li><a href="/images/zukuenftiges/chammerholz/slider/08.jpg" target="_blank" rel="galerie"
+                               class="lightbox"><img src="/__we_thumbs__/3204_12_08.jpg" alt="" width="180"
+                                                     height="115"/></a></li>
+                        <li><a href="/images/zukuenftiges/chammerholz/slider/09.jpg" target="_blank" rel="galerie"
+                               class="lightbox"><img src="/__we_thumbs__/3205_12_09.jpg" alt="" width="180"
+                                                     height="115"/></a></li>
+                    </ul>
+                    <div class="clear"></div>
+                    <p>&nbsp;</p>
+                </div><!-- .newsContent -->
+            </article>
+
+
+            <article>
+                <div class="newsHeader">
+                    <h1>Der Kontakt: Christine Bodmer</h1>
+                    <div class="erfahren">mehr erfahren</div>
+                </div><!-- .newsHeader -->
+                <div class="newsContent">
+                    <p><span class="klein">T</span> <span class="gross">043 444 26 60</span></p>
+                    <p class="klein"><a
+                            href="&#109;&#97;&#105;&#108;&#116;&#111;:&#98;&#111;&#100;&#109;&#101;&#114;&#64;&#98;&#112;&#108;&#114;&#46;&#99;&#104;">
+                        &#98;&#111;&#100;&#109;&#101;&#114;&#64;&#98;&#112;&#108;&#114;&#46;&#99;&#104;</a></p>
+                    <p>&nbsp;</p>
+                    <p>Frau Christine Bodmer berät Sie gerne bei allen Fragen rund um Ihr neues Zuhause oder zeigt Ihnen
+                        gleich persönlich das attraktive Objekt. Und selbstverständlich kümmert sie sich auf Wunsch auch
+                        um den Verkauf Ihrer bisherigen Liegenschaft. Von A bis Z. Ohne Wenn und Aber.</p>
+                    <p>&nbsp;</p></div><!-- .newsContent -->
+            </article>
+
+
+            <article class="kontaktForm">
+                <div class="newsHeader">
+                    <h1>Das Kontaktformular: Der Schlüssel zur individuellen Lebensqualität ist der persönliche
+                        Kontakt.</h1>
+                    <div class="erfahren">mehr erfahren</div>
+                </div><!-- .newsHeader -->
+                <div class="newsContent">
+                    <script type="text/javascript" src="/_js/jquery.validVal-4.3.5.min.js"></script>
+
+                    <script type='text/javascript'>
+                        $(document).ready(function () {
+                            // Felder ein-/ausblenden im Formular
+                            $('#Tageszeitung').change(function () {
+                                if ($(this).prop('checked') == true) {
+                                    $('#einblenden1').slideDown();
+                                } else {
+                                    $('#einblenden1').slideUp();
+                                }
+                            });
+                            $('#Magazin').change(function () {
+                                if ($(this).prop('checked') == true) {
+                                    $('#einblenden2').slideDown();
+                                } else {
+                                    $('#einblenden2').slideUp();
+                                }
+                            });
+
+                            // Formular mit ValidVal
+                            $(".newsContent form").validVal();
+
+                        });
+                    </script>
+
+                    <form action="/_include/sendKontakt.php" method="post" enctype="multipart/form-data">
+                        <fieldset class="zweispalten">
+                            <p id="formularMail"><input name="Mail" type="text" id="Mail"/></p>
+
+                            <p>
+                                <label for="Anrede">Anrede</label>
+                                <select name="Anrede" class="formGross" id="Anrede">
+                                    <option value="Frau">Frau</option>
+                                    <option value="Herr">Herr</option>
+                                </select>
+                            </p>
+                            <p>
+                                <label for="Vorname">Vorname *</label>
+                                <input type="text" class="formGross required" id="Vorname" name="Vorname" size="30">
+                            </p>
+                            <p>
+                                <label for="Name">Name *</label>
+                                <input type="text" class="formGross required" id="Name" name="Name" size="30">
+                            </p>
+                            <p>
+                                <label for="Adresse">Adresse *</label>
+                                <input type="text" class="formGross required" id="Adresse" name="Adresse" size="30">
+                            </p>
+                            <p>
+                                <label for="Ort">PLZ/Ort *</label>
+                                <input type="text" class="formGross required" id="Ort" name="Ort" size="30">
+                            </p>
+                            <p>
+                                <label for="Mailadresse">E-Mail *</label>
+                                <input type="email" class="formGross required" id="Mailadresse" name="Mailadresse"
+                                       size="30">
+                            </p>
+                            <p>
+                                <label for="Telefon">Telefon *</label>
+                                <input type="tel" class="formGross required" id="Telefon" name="Telefon" size="30">
+                            </p>
+                            <p>
+                                <label for="Bemerkungen">Bemerkungen</label>
+                                <textarea rows="5" cols="20" name="Bemerkungen" id="Bemerkungen"
+                                          class="formGross"></textarea>
+                            </p>
+                        </fieldset>
+                        <fieldset class="zweispalten">
+                            <p>Bitte nehmen Sie mit mir Kontakt auf<br>
+                                <label class="formRadio"><input type="radio" name="Kontakt" value="per Telefon">&nbsp;&nbsp;per
+                                    Telefon</label>
+                                <label class="formRadio"><input type="radio" name="Kontakt" value="per E-Mail">&nbsp;&nbsp;per
+                                    E-Mail</label>
+                            </p>
+                            <p><br>Bitte senden Sie mir Unterlagen zu folgendem Projekt:<br>
+                                <label for="Projekt" class="formRadio">Projektname</label>
+                                <select name="Projekt" class="formGross" id="Projekt">
+                                    <option value="">bitte wählen</option>
+                                    <optgroup label="Eigentumswohnungen">
+                                        <option value="Blickpunkt Töpferei, Embrach">Blickpunkt Töpferei, Embrach
+                                        </option>
+                                        <option value="Blickpunkt Giessen, Meilen">Blickpunkt Giessen, Meilen</option>
+                                        <option value="Blickpunkt Stocklen, Meilen">Blickpunkt Stocklen, Meilen</option>
+                                        <option value="Blickpunkt Chammerholz, Wermatswil" selected>Blickpunkt
+                                            Chammerholz, Wermatswil
+                                        </option>
+                                        <option value="Binzackerstrasse, Wetzikon">Binzackerstrasse, Wetzikon</option>
+                                        <option value="Blickpunkt NAHraum, Wetzikon">Blickpunkt NAHraum, Wetzikon
+                                        </option>
+                                    </optgroup>
+                                    <optgroup label="Einzelimmobilien">
+                                        <option value="Blickpunkt Dübendorf">Blickpunkt Dübendorf</option>
+                                        <option value="Blickpunkt Obermülistrasse, Fehraltorf">Blickpunkt
+                                            Obermülistrasse, Fehraltorf
+                                        </option>
+                                        <option value="Blickpunkt Am Aaabach, Uster">Blickpunkt Am Aaabach, Uster
+                                        </option>
+                                        <option value="Blickpunkt Im Lot, Uster">Blickpunkt Im Lot, Uster</option>
+                                    </optgroup>
+                                    <optgroup label="Erstvermietung">
+                                        <option value="Blickpunkt Flor, Uster">Blickpunkt Flor, Uster</option>
+                                        <option value="Blickpunkt Gartenstrasse, Zollikon">Blickpunkt Gartenstrasse,
+                                            Zollikon
+                                        </option>
+                                    </optgroup>
+                                    <optgroup label="Gewerbeobjekte">
+                                        <option value="Flor, Uster">Flor, Uster</option>
+                                        <option value="Inside Volketswil">Inside Volketswil</option>
+                                    </optgroup>
+                                    <optgroup label="Bauland">
+                                        <option value="Glasi-Areal, Wauwil">Glasi-Areal, Wauwil</option>
+                                    </optgroup>
+                                </select>
+                            </p>
+                            <p><br><strong>Wie sind Sie auf unser Angebot aufmerksam geworden?</strong></p>
+                            <div class="zweispalten">
+                                <label class="formRadio"><input type="checkbox" name="Tageszeitung" value="X"
+                                                                id="Tageszeitung">&nbsp;&nbsp;Tageszeitung</label>
+                                <div class="clear"></div>
+                                <div id="einblenden1">
+                                    <label for="welche">welche?</label><br>
+                                    <input type="text" class="formKlein" id="welche" name="welche" size="30">
+                                </div>
+                            </div>
+                            <div class="zweispalten">
+                                <label class="formRadio"><input type="checkbox" name="Magazin" value="X" id="Magazin">&nbsp;&nbsp;Magazin</label>
+                                <div class="clear"></div>
+                                <div id="einblenden2">
+                                    <label for="welches">welches?</label><br>
+                                    <input type="text" class="formKlein" id="welches" name="welches" size="30">
+                                </div>
+                            </div>
+                            <div class="clear"></div>
+                            <p class="zweispalten">
+                                <label class="formRadio"><input type="checkbox" name="Bautafel" value="X">&nbsp;&nbsp;Bautafel</label>
+                            </p>
+                            <p class="zweispalten">
+                                <label class="formRadio"><input type="checkbox" name="Internet" value="X">&nbsp;&nbsp;Internet</label>
+                            </p>
+                            <p class="zweispalten">
+                                <label class="formRadio"><input type="checkbox" name="Empfehlung" value="X">&nbsp;&nbsp;Empfehlung</label>
+                            </p>
+                            <p class="zweispalten">
+                                <label class="formRadio"><input type="checkbox" name="Newsletter" value="X">&nbsp;&nbsp;Newsletter</label>
+                            </p>
+                            <p class="zweispalten" style="padding-top:5px;">
+                                <input type="submit" class="sendKontakt" name="Senden" value="senden">
+                            </p>
+                            <p class="zweispalten" style="padding-top:5px;">Felder mit * sind Pflichtfelder.</p>
+                        </fieldset>
+                    </form>
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+                </div><!-- .newsContent -->
+            </article>
+
+
+        </section><!-- .content -->
+        <div class="clear"></div>
+    </div><!-- #wrap -->
+</div><!-- #outWrap -->
+<div id="push"></div>
+<div id="footerWrap">
+    <footer>
+        <p>Blickpunkt Lebensraum | <span class="nobr">Seestrasse 98</span> | <span class="nobr">8610 Uster</span> |
+            <span class="nobr">T 043 444 26 00</span> | <span class="nobr">F 043 444 26 08</span> | <a
+                    href="&#109;&#97;&#105;&#108;&#116;&#111;:&#105;&#110;&#102;&#111;&#64;&#98;&#112;&#108;&#114;&#46;&#99;&#104;">
+                &#105;&#110;&#102;&#111;&#64;&#98;&#112;&#108;&#114;&#46;&#99;&#104;</a></p>
+        <div id="googlePlus"><a rel="author" href="https://plus.google.com/113106381720937823113" target="_blank"><img
+                src="/_images/gplus.png" width="21" height="21"></a></div>
+    </footer>
+</div>
+</body>
+</html>

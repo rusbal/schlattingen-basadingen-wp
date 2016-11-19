@@ -1,0 +1,482 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WordPress Plugin Facebook Social Stream\n"
+"POT-Creation-Date: 2015-12-16 09:48+0100\n"
+"PO-Revision-Date: 2015-12-16 10:36+0100\n"
+"Last-Translator: Daniel Anglileri\n"
+"Language-Team: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.7.5\n"
+"X-Poedit-Basepath: ../\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: lib/EDD/FBSS_EDD_SL_Plugin_Updater.php:176
+#, php-format
+msgid ""
+"There is a new version of %1$s available. <a target=\"_blank\" class="
+"\"thickbox\" href=\"%2$s\">View version %3$s details</a>."
+msgstr ""
+"Eine neue Version von %1$s ist verfügbar. <a target=\"_blank\" class="
+"\"thickbox\" href=\"%2$s\">Details zu Version %3$s</a>."
+
+#: lib/EDD/FBSS_EDD_SL_Plugin_Updater.php:183
+#, php-format
+msgid ""
+"There is a new version of %1$s available. <a target=\"_blank\" class="
+"\"thickbox\" href=\"%2$s\">View version %3$s details</a> or <a href=\"%4$s"
+"\">update now</a>."
+msgstr ""
+"Eine neue Version von %1$s ist verfügbar. <a target=\"_blank\" class="
+"\"thickbox\" href=\"%2$s\">Details zu Version %3$s</a> oder <a href=\"%4$s"
+"\">jetzt updaten</a>."
+
+#: lib/EDD/FBSS_EDD_SL_Plugin_Updater.php:323
+msgid "You do not have permission to install plugin updates"
+msgstr "Du hast nicht die Berechtigungen, um Updates zu installieren"
+
+#: lib/EDD/FBSS_EDD_SL_Plugin_Updater.php:323
+msgid "Error"
+msgstr "Fehler"
+
+#: lib/FBSS_Admin.php:195
+msgid "Minimum update interval is 5 minutes."
+msgstr "Das kleinste Update-Intervall beträgt 5 Minuten"
+
+#: lib/FBSS_Admin.php:211
+msgid "Minimum 1 message has to be configured."
+msgstr "Mindestens eine Nachricht muss konfiguriert werden"
+
+#: lib/FBSS_Admin.php:249
+msgid "Retrieved and updated Facebook data."
+msgstr "Facebook Daten empfangen und aktualisiert"
+
+#: lib/FBSS_Admin.php:256
+msgid "Could not retrieve Facebook data. Please check your settings."
+msgstr ""
+"Konnte keine Facebook Daten empfangen. Bitte prüfe deine Einstellungen."
+
+#: lib/FBSS_Admin.php:387 wp-fb-social-stream.php:207
+msgid "Y-m-d h:i:s a"
+msgstr "H:i:s d.m.Y"
+
+#: lib/FBSS_Admin.php:445
+msgid "Extension activated successfully"
+msgstr "Erweiterung erfolgreich aktualisiert"
+
+#: lib/FBSS_Admin.php:449
+msgid "Extension activation failed"
+msgstr "Aktivierung der Erweiterung ist fehlgeschlagen"
+
+#: lib/FBSS_ExtensionFactory.php:47
+#, php-format
+msgid "Name restriction error with extension '%s'!"
+msgstr "Name restriction error bei der Erweiterung '%s'!"
+
+#: lib/FBSS_SocialStream.php:112
+msgid "jS \\of %\\s Y h:i A"
+msgstr "\\a\\m d. %\\s Y \\u\\m H:i \\U\\h\\r"
+
+#: lib/FBSS_View.php:26
+#, php-format
+msgid "Path restriction error with template '%s'!"
+msgstr "Path restriction error beim Template '%s'!"
+
+#: templates/default/config.php:17 templates/fbss_simple/config.php:17
+msgid "Message-box"
+msgstr "Nachrichten-Box"
+
+#: templates/default/config.php:18 templates/fbss_simple/config.php:18
+msgid "The main message box"
+msgstr "Die Haupt-Nachrichtenbox"
+
+#: templates/default/config.php:24 templates/default/config.php:91
+#: templates/fbss_simple/config.php:24
+msgid "Maximum width"
+msgstr "Maximale Breite"
+
+#: templates/default/config.php:31 templates/fbss_simple/config.php:31
+msgid "Width"
+msgstr "Breite"
+
+#: templates/default/config.php:38 templates/default/config.php:98
+#: templates/default/config.php:114 templates/default/config.php:151
+#: templates/default/config.php:181 templates/fbss_simple/config.php:38
+#: templates/fbss_simple/config.php:68 templates/fbss_simple/config.php:84
+#: templates/fbss_simple/config.php:121 templates/fbss_simple/config.php:151
+msgid "Background color"
+msgstr "Farbe Hintergrund"
+
+#: templates/default/config.php:45
+msgid "Border color"
+msgstr "Farbe Umrandung"
+
+#: templates/default/config.php:68 templates/fbss_simple/config.php:45
+msgid "Text color message date"
+msgstr "Farbe Datumstext"
+
+#: templates/default/config.php:75 templates/fbss_simple/config.php:52
+msgid "Text color message text"
+msgstr "Farbe Nachrichtentext"
+
+#: templates/default/config.php:84 templates/fbss_simple/config.php:61
+msgid "Meta-box"
+msgstr "Meta-Box"
+
+#: templates/default/config.php:85 templates/fbss_simple/config.php:62
+msgid "The meta-box contains the like and comment count"
+msgstr "Die Meta-Box enthält die Anzahl der Likes und Kommentare"
+
+#: templates/default/config.php:107 templates/fbss_simple/config.php:77
+msgid "Link-box"
+msgstr "Link-Box"
+
+#: templates/default/config.php:108 templates/fbss_simple/config.php:78
+msgid "Links inside the message-box are wrapped by the link-box"
+msgstr ""
+"Links innerhalb der Haupt-Nachrichtenbox werden von der Link-Box umgeben"
+
+#: templates/default/config.php:121 templates/fbss_simple/config.php:91
+msgid "Text color link name"
+msgstr "Farbe Linkname"
+
+#: templates/default/config.php:128 templates/fbss_simple/config.php:98
+msgid "Text color link description"
+msgstr "Farbe Linkbeschreibung"
+
+#: templates/default/config.php:135 templates/fbss_simple/config.php:105
+msgid "Text color link caption"
+msgstr "Farbe Linkuntertitel"
+
+#: templates/default/config.php:144 templates/fbss_simple/config.php:114
+msgid "Video-box"
+msgstr "Video-Box"
+
+#: templates/default/config.php:145 templates/fbss_simple/config.php:115
+msgid ""
+"The video-box contains the video itself and optional name and description"
+msgstr "Die Video-Box enthalt das Video und optional Name und Beschreibung"
+
+#: templates/default/config.php:158 templates/fbss_simple/config.php:128
+msgid "Text color name"
+msgstr "Farbe Name"
+
+#: templates/default/config.php:165 templates/fbss_simple/config.php:135
+msgid "Text color description"
+msgstr "Farbe Beschreibung"
+
+#: templates/default/config.php:174 templates/fbss_simple/config.php:144
+msgid "Event-box"
+msgstr "Veranstaltungs-Box"
+
+#: templates/default/config.php:175 templates/fbss_simple/config.php:145
+msgid "Events are wrapped by the event-box"
+msgstr ""
+"Veranstaltungen innerhalb der Haupt-Nachrichtenbox werden von der "
+"Veranstaltungs-Box umgeben"
+
+#: templates/default/config.php:188 templates/fbss_simple/config.php:158
+msgid "Text color event name"
+msgstr "Farbe Veranstaltungs-Name"
+
+#: templates/default/config.php:195 templates/fbss_simple/config.php:165
+msgid "Text color event description"
+msgstr "Farbe Veranstaltungs-Beschreibung"
+
+#: templates/default/config.php:202 templates/fbss_simple/config.php:172
+msgid "Text color event date"
+msgstr "Farbe Veranstaltungs-Datumstext"
+
+#: templates/default/message.tpl.php:18
+#: templates/fbss_simple/message.tpl.php:22
+msgid "profile picture"
+msgstr "Profilbild"
+
+#: templates/default/message.tpl.php:47 templates/default/message.tpl.php:77
+#: templates/fbss_simple/message.tpl.php:73
+msgid "Link"
+msgstr "Link"
+
+#: templates/default/message.tpl.php:67
+#: templates/fbss_simple/message.tpl.php:63
+msgid "Message image"
+msgstr "Nachrichtenbild"
+
+#: templates/default/message.tpl.php:108
+#: templates/fbss_simple/message.tpl.php:104
+msgid "Event"
+msgstr "Veranstaltung"
+
+#: templates/default/message.tpl.php:140
+#: templates/fbss_simple/message.tpl.php:136
+msgid "Your browser does not support the video tag."
+msgstr "Dein Browser unterstützt leider das HTML5 video tag nicht"
+
+#: view/admin/extensions-store.tpl.php:5
+msgid "Installed extensions"
+msgstr "Installierte Erweiterungen"
+
+#: view/admin/extensions-store.tpl.php:22
+msgid "active"
+msgstr "aktiv"
+
+#: view/admin/extensions-store.tpl.php:24
+#, php-format
+msgid "support expired %s"
+msgstr "Support ausgelaufen %s"
+
+#: view/admin/extensions-store.tpl.php:27
+msgid "inactive"
+msgstr "inaktiv"
+
+#: view/admin/extensions-store.tpl.php:43
+msgid "license key"
+msgstr "Lizenzschlüssel"
+
+#: view/admin/extensions-store.tpl.php:46
+msgid "update"
+msgstr "update"
+
+#: view/admin/extensions-store.tpl.php:48
+msgid "activate"
+msgstr "aktivieren"
+
+#: view/admin/extensions-store.tpl.php:61
+msgid "Available extensions"
+msgstr "Verfügbare Erweiterungen"
+
+#: view/admin/extensions-store.tpl.php:83
+msgid "Download"
+msgstr "Download"
+
+#: view/admin/extensions-store.tpl.php:96
+msgid "Congratulations! You have installed all available extensions."
+msgstr ""
+"Herzlichen Glückwunsch! Du hast alle verfügbaren Erweiterungen installiert."
+
+#: view/admin/settings-advanced-options.tpl.php:1
+msgid "Advanced options"
+msgstr "Experten Einstellungen"
+
+#: view/admin/settings-advanced-options.tpl.php:6
+msgid "Facebook Access Token"
+msgstr "Facebook Access Token"
+
+#: view/admin/settings-advanced-options.tpl.php:9
+msgid "optional"
+msgstr "optional"
+
+#: view/admin/settings-advanced-options.tpl.php:10
+msgid ""
+"Either use your own one with specific rights or leave it empty to use the "
+"plugin-default"
+msgstr ""
+"Füge entweder deinen eigenen Access Token hier ein oder lass das Feld leer, "
+"um den Default-Token zu benutzen"
+
+#: view/admin/settings-advanced-options.tpl.php:15
+msgid "Disable CSS"
+msgstr "CSS deaktivieren"
+
+#: view/admin/settings-advanced-options.tpl.php:19
+msgid ""
+"Disable all CSS settings and CSS includes beside \"Custom inline CSS\" "
+"options down below"
+msgstr ""
+"Deaktiviert alle CSS Einstellungen und CSS-Includes mit Ausnahme der Option "
+"\"Benutzerdefiniertes inline CSS\" (siehe unten)"
+
+#: view/admin/settings-advanced-options.tpl.php:24
+msgid "Disable JS"
+msgstr "JS deaktivieren"
+
+#: view/admin/settings-advanced-options.tpl.php:28
+msgid ""
+"Disable all Javascript settings and Javascript includes (caution! this also "
+"deactivates the automatic stream update)"
+msgstr ""
+"Deaktiviert alle Javascript Einstellungen und Javascript-includes (Achtung! "
+"Das automatische Stream Update wird somit auch deaktiviert)"
+
+#: view/admin/settings-advanced-options.tpl.php:33
+msgid "Ouput type"
+msgstr "Ausgabe Modus"
+
+#: view/admin/settings-advanced-options.tpl.php:40
+msgid "Defines the output data type of the shortcode"
+msgstr "Definiert den Ausgabe-Typ des shortcodes"
+
+#: view/admin/settings-advanced-options.tpl.php:45
+msgid "Custom inline CSS"
+msgstr "Benutzerdefiniertes inline CSS"
+
+#: view/admin/settings-advanced-options.tpl.php:49
+msgid "Add your own custom CSS to your social stream"
+msgstr "Füge dein eigenes optionales Styling als inline CSS hinzu"
+
+#: view/admin/settings-fb-options.tpl.php:1
+msgid "Facebook options"
+msgstr "Facebook Einstellungen"
+
+#: view/admin/settings-fb-options.tpl.php:6
+msgid "Facebook Page ID"
+msgstr "ID der Facebook Seite"
+
+#: view/admin/settings-fb-options.tpl.php:10
+msgid ""
+"You can idintify the page-id as follows: https://www.facebook.com/"
+"{<strong>page-name</strong>}"
+msgstr ""
+"Die ID der Facebook Seite kann wie folgt identifiziert werden: https://www."
+"facebook.com/{<strong>Seiten-ID</strong>}"
+
+#: view/admin/settings-fb-options.tpl.php:11
+msgid "more"
+msgstr "mehr"
+
+#: view/admin/settings-fb-options.tpl.php:13
+#, php-format
+msgid ""
+"If you still have problems to identify your Facebook page-id have a look at "
+"the external online-service %s"
+msgstr ""
+"Solltest du immer noch Probleme haben die ID deiner Facebook Seite zu "
+"identifiziere, kannst du auch folgenden externen Online-Dienst benutzen %s"
+
+#: view/admin/settings-stream-options.tpl.php:1
+msgid "Stream options"
+msgstr "Stream Einstellungen"
+
+#: view/admin/settings-stream-options.tpl.php:6
+msgid "Update interval"
+msgstr "Update Intervall"
+
+#: view/admin/settings-stream-options.tpl.php:9
+msgid "minutes"
+msgstr "Minuten"
+
+#: view/admin/settings-stream-options.tpl.php:10
+msgid "Default value is 30 minutes"
+msgstr "Der Default-Wert entspricht 30 Minuten"
+
+#: view/admin/settings-stream-options.tpl.php:15
+msgid "Max messages"
+msgstr "Maximale Nachrichtenanzahl"
+
+#: view/admin/settings-stream-options.tpl.php:19
+msgid "Default value is 20 messages"
+msgstr "Der Default-Wert entspricht 20 Nachrichten"
+
+#: view/admin/settings-stream-options.tpl.php:24
+msgid "Ouput theme"
+msgstr "Ausgabe Theme"
+
+#: view/admin/settings-stream-options.tpl.php:32
+msgid "Defines the look&feel and styling settings of your social stream"
+msgstr ""
+"Definiert das Erscheinungsbild und die Styling Optionen deines Social Streams"
+
+#: view/admin/settings-stream-options.tpl.php:40
+msgid "Display"
+msgstr "Anzeige"
+
+#: view/admin/settings-stream-options.tpl.php:45
+msgid "Shortcode"
+msgstr "Shortcode"
+
+#: view/admin/settings-stream-options.tpl.php:49
+msgid ""
+"Copy & paste this shortcode into your page, post or widget where you want to "
+"display your social stream"
+msgstr ""
+"Kopiere diesen Shortcode an die Stelle deiner Seite, deines Beitrags oder "
+"Widgets, an der dein Social Stream angezeigt werden soll"
+
+#: view/admin/settings-styling-options.tpl.php:1
+msgid "Stream customization"
+msgstr "Stream Anpassung"
+
+#: view/admin/settings-styling-options.tpl.php:2
+msgid "Optional style configuration of your social stream"
+msgstr "Optionales Styling deines Social Streams"
+
+#: view/admin/stream-info.tpl.php:4
+msgid "Last stream update"
+msgstr "Letztes Stream Update"
+
+#: view/admin/stream-info.tpl.php:4
+msgid "update stream"
+msgstr "Update Stream"
+
+#: view/admin/stream-info.tpl.php:9
+msgid "Interact"
+msgstr "Mach mit"
+
+#: view/admin/stream-info.tpl.php:11
+msgid "Contact me for"
+msgstr "Kontaktiere mich für"
+
+#: view/admin/stream-info.tpl.php:13
+msgid "support"
+msgstr "Support"
+
+#: view/admin/stream-info.tpl.php:14
+msgid "new features"
+msgstr "neue Features"
+
+#: view/admin/stream-info.tpl.php:16
+msgid "I'll do my best!"
+msgstr "Ich geb' mein Bestes!"
+
+#: view/admin/stream-info.tpl.php:17
+msgid "You like my work? Please"
+msgstr "Dir gefällt meine Arbeit? Bitte"
+
+#: view/admin/stream-info.tpl.php:19
+msgid "vote for me"
+msgstr "vote für mich"
+
+#: view/admin/stream-info.tpl.php:20
+msgid "and tell your friends"
+msgstr "und erzähl es weiter"
+
+#: view/admin/stream-info.tpl.php:27
+msgid "Donation"
+msgstr "Spende"
+
+#: view/admin/stream-info.tpl.php:28
+msgid "Coffee"
+msgstr "Kaffee"
+
+#: view/admin/stream-info.tpl.php:28
+msgid "is much appreciated"
+msgstr "ist herzlich willkommen"
+
+#: view/admin/wrap.tpl.php:6 wp-fb-social-stream.php:148
+msgid "Settings"
+msgstr "Einstellungen"
+
+#: view/admin/wrap.tpl.php:7
+msgid "Styling"
+msgstr "Styling"
+
+#: view/admin/wrap.tpl.php:8
+msgid "Advanced"
+msgstr "Experten"
+
+#: view/admin/wrap.tpl.php:10
+msgid "Extensions"
+msgstr "Erweiterungen"
+
+#~ msgid "Facebook Social Stream Settings"
+#~ msgstr "Facebook Social Stream Einstellungen"
+
+#~ msgid "at"
+#~ msgstr "am"
+
+#~ msgid "am"
+#~ msgstr "at"

@@ -1,0 +1,409 @@
+@charset "UTF-8";
+
+/* 
+Farbdefinitionen:
+
+Schrift:    #333
+Rot:		#c0042f
+
+*/
+
+
+/* Generell
+*******************************************************************************/
+
+body {
+	margin: 0;
+	font-family: "ff-din-web", Arial, sans-serif;
+	font-weight: 400;
+	font-size: 12px !important;
+	color: #000;
+	background: #fff;
+	line-height: 1.5em;
+	margin-left: 5%;
+	width: 640px;
+}
+
+h1 {
+	font-family: "ff-din-web", Arial, sans-serif;
+	font-weight: 400;
+	font-size: 22px;
+	text-transform: uppercase;
+	display: block;
+	border-top: none;
+	padding: 28px 0 6px 0;
+	line-height: 1.3em;
+}
+
+h2 {
+	font-family: "ff-din-web", Arial, sans-serif;
+	font-weight: 400;
+	font-size: 12px;
+	text-transform: uppercase;
+}
+
+a:link, a:visited {
+	text-decoration: none;
+	color: #555;
+}
+
+a:hover, a:active {
+	text-decoration: none;
+	color: #000;
+}
+
+
+#wrap {
+	position: relative;
+	max-width: 100% !important;
+	width: 100% !important;
+	margin: 0;
+}
+
+
+
+/* Header
+*******************************************************************************/
+
+#header {
+	display: none;
+}
+
+#logoPrint {
+	display: block;
+	position: relative;
+	width: 100%;
+	text-align: right;
+	padding: 3px 10px 0 0;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/* Headernavigation
+*******************************************************************************/
+
+#headerNav {
+	display: none;
+}
+
+
+
+/* Hauptnavigation
+*******************************************************************************/
+
+#mainNav {
+	display: none;
+}
+
+
+/* Subnavigation
+*******************************************************************************/
+
+#subNav {
+	display: none;
+}
+
+
+
+/* Content
+*******************************************************************************/
+
+.slider .cycle {
+	border-top: none;
+}
+
+.flexslider img, .lageplan img {
+	width: 640px !important;
+	height: 320px !important;
+}
+
+.slider h1 {
+	border: none;
+	padding: 18px 0 6px 0;
+}
+
+#prev, .flex-prev {
+	display: none !important;
+}
+
+#next, .flex-next {
+	display: none !important;
+}
+
+.objectSmall h1, .objectLarge h1, .objectXLarge h1 {
+	font-size: 10px !important;
+}
+
+.objectSmall h2, .objectLarge h2, .objectXLarge h2 {
+	font-size: 10px !important;
+	line-height: 1.2em;
+}
+
+
+
+
+/* News (read more) */
+
+.accordion .erfahren {
+	display: none;
+}
+
+
+
+
+/* Impressum */
+
+.disclaimer p {
+	padding-bottom: 15px;
+}
+
+
+
+/* Referenzen Liste */
+
+table.referenzenliste {
+	width: 100%;
+}
+
+.referenzenliste td {
+	vertical-align: top;
+	text-align: left;
+	padding: 5px 15px 5px 0;
+	border-top: #999 1px solid;
+}
+
+.referenzenliste tr:hover td {
+	background: #f3f3f3;
+	cursor: pointer;
+}
+
+.referenzenliste a {
+	color: #333;
+	font-weight: 700;
+}
+
+td.noBorder, tr.noBorder td {
+	border: none;
+}
+
+tr.noBorder:hover td {
+	background: #fff !important;
+	cursor: default;
+}
+
+td.jahr {
+	font-weight: 400;
+	border-top: #555 2px solid;
+}
+
+.referenzenliste tr:hover td.jahr,
+.referenzenliste tr:hover td.noBorder {
+	background: none;
+}
+
+td.fett {
+	border-top: #555 2px solid;
+}
+
+
+/* Referenzen Detail */
+
+.referenztabelle td {
+	padding-right: 15px;
+	vertical-align: top;
+}
+
+
+/* Suche */
+
+ul#suchresultate {
+	list-style: none;
+	border-top: #333 1px solid;
+	margin: 5px 0;
+}
+
+#suchresultate li {
+	border-bottom: #333 1px solid;
+	padding: 10px 0;
+}
+
+#suchresultate h3 {
+	font-family: "ff-din-web", Arial, sans-serif;
+	font-weight: 400;
+	font-size: 25px;
+	text-transform: uppercase;
+	display: block;
+	line-height: 1.3em;
+	width: 100%;
+}
+
+#suchresultate a:link,
+#suchresultate a:visited {
+	color: #333;
+	display: block;
+	width: 100%;
+}
+
+#suchresultate a:hover,
+#suchresultate a:active {
+	color: #c0042f;
+}
+
+input.formSuche {
+	width: 40%;
+	font-size: 15px;
+	padding: 3px;
+	background: none;
+	border: #333 1px solid;
+}
+
+input:hover.formSuche,
+input:focus.formSuche {
+	border: #c0042f 1px solid;
+}
+
+input.sendSuche {
+	font-size: 15px;
+	color: #c0042f;
+	background: none;
+	border: none;
+	margin-left: 15px;
+	cursor: pointer;
+}
+
+input:hover.sendSuche {
+	color: #000;
+}
+
+
+/* Sitemap */
+
+ul.sitemap {
+	list-style: none;
+	line-height: 1.8em;
+	margin: 0;
+}
+
+.sitemap a {
+	font-size: 16px;
+	text-transform: uppercase;
+}
+
+.sitemap a:link, .sitemap a:visited {
+	color: #333;
+}
+
+.sitemap a:hover, .sitemap a:active {
+	color: #c0042f;
+}
+
+ul.sitemap ul {
+	list-style: none;
+	margin-left: 20px;
+}
+
+
+/* Bildergalerie */
+
+ul.galerie {
+	list-style: none;
+	margin: 0;
+}
+
+.galerie li {
+	float: left;
+	display: block;
+	width: 18.3%;
+	margin: 0 2.15% 15px 0;
+}
+
+.galerie img {
+	width: 100%;
+	height: auto;
+}
+
+li.element5 {
+	margin-right: 0;
+}
+
+
+/* Bildquellen */
+table.bildquellen {
+	width: 100%;
+}
+
+.bildquellen td {
+	vertical-align: bottom;
+	text-align: left;
+	padding-right: 15px;
+}
+
+
+/* Newsletter */
+ul.listeNewsletter {
+	list-style: none;
+	margin: 20px 0 0 0;
+}
+
+.listeNewsletter a:link,
+.listeNewsletter a:visited {
+	color: #333;
+}
+
+.listeNewsletter a:hover,
+.listeNewsletter a:active {
+	color: #c0042f;
+}
+
+
+
+.titelBild {
+	height: 22px;
+	width: auto;
+	margin-bottom: -3px;
+}
+
+.newsHeader h1, .gross {
+	font-size: 22px;
+}
+
+.newsContent {
+	display: block !important;
+}
+
+.kontaktForm {
+	display: none;
+}
+
+
+/* Footer
+*******************************************************************************/
+
+footer {
+	clear: both;
+	color: #bababa;
+	margin: 50px 10px 0 10px;
+	padding: 10px 0 15px 0;
+	border-top: #bababa 1px solid;
+}
+
+footer a:link, footer a:visited {
+	color: #bababa;
+	white-space: nowrap;
+}
+
+footer a:hover, footer a:active {
+	color: #c0042f;
+}
+
+
+
+/* Formulare
+*******************************************************************************/
+
+form {
+	display: none;
+}
+
