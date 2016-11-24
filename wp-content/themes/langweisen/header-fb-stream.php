@@ -42,6 +42,7 @@
     width: 100% !important;
 }
 </style>
+<?php include "analyticstracking.php"; ?>
 </head>
 <body> 
 <div class="content-fb-stream">
