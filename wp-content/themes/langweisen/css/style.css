@@ -289,8 +289,12 @@ strong {
 	width: 175px;
 	/*height: 137px;*/
 	height: 175px;
-	text-indent: -9999px;
+	/*text-indent: -9999px;*/
 	overflow: hidden;
+}
+#logo a img {
+  height: 100%;
+  width: 100%;
 }
 
 #logoPrint {

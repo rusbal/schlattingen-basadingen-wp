@@ -3,6 +3,9 @@
  * Header:
  *   header-fb-stream.php
  */
+
+use Rsu\Settings\Option;
+
 ?><!doctype html>
 <html>
 <head>
@@ -14,7 +17,6 @@
   <?php include "html5shiv.html"; ?>
   <?php include "link.icons.html"; ?>
   <?php include "header.mailchimp-tracking.html"; ?>
-  <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/css/index.css">
 <style>
 .content-fb-stream {
     background: #fff;
@@ -47,5 +49,5 @@
 <body> 
 <div class="content-fb-stream">
     <div id="banner">
-       <a href="/einfamilienhaus"><img src="/wp-content/uploads/2016/01/eigentumswohnungen_Lario_am_rhein_banner_1024x280_V6.jpg"></a>
+        <a href="/einfamilienhaus"><?= Option::get_image('header_banner', 'head-banner') ?></a>
     </div>

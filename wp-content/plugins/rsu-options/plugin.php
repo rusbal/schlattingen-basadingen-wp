@@ -17,9 +17,11 @@ $logoTab = [
         'header_logo' => [
             'type' => 'image',
             'title' => 'Header Logo',
-            'description' => 'This logo shows on the header. Size: 60x60'
         ],
-        'footer_logo' => [ 'type' => 'image', 'title' => 'Footer Logo', 'description' => 'This logo shows on the footer. Size: 384x64' ],
+        'header_banner' => [
+            'type' => 'image',
+            'title' => 'Header Banner',
+        ],
         'description' => [ 'type' => 'tinymce', 'title' => 'Description' ],
     ],
 ];

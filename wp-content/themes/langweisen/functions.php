@@ -9,7 +9,7 @@
 
 function langweisen_scripts() {
     $template_dir = get_template_directory_uri();
-    wp_enqueue_style('style', $template_dir . '/css/style.css', array(), '5.6', 'screen');
+    wp_enqueue_style('style', $template_dir . '/css/style.css', array(), '5.7', 'screen');
     wp_enqueue_style('print', $template_dir . '/css/print.css', array(), false, 'print');
     wp_enqueue_style('flexslider', $template_dir . '/js/flexSlider/flexslider.css');
     wp_enqueue_style('fancybox', $template_dir . '/js/fancybox/jquery.fancybox-1.3.1.css');
@@ -20,6 +20,9 @@ function langweisen_scripts() {
     wp_enqueue_script('jquery-rwdimmap', $template_dir . '/js/jquery.rwdImageMaps.min.js');
     wp_enqueue_script('jquery-fancybox', $template_dir . '/js/fancybox/jquery.fancybox-1.3.1.pack.js');
     //wp_enqueue_script('facebook-stream-fix', $template_dir . '/js/facebook-stream-fix.js', array(), '1', true);
+    if (is_front_page()) {
+        wp_enqueue_style('homepage', $template_dir . '/css/index.css', [], '1.0', 'screen');
+    }
 }
 
 add_action( 'wp_enqueue_scripts', 'langweisen_scripts' );
@@ -142,3 +145,5 @@ new Rsu\Cf7\Validator\RequireOne([
         'preislage_1_6_to_plus',
     ],
 ]);
+
+add_image_size( 'head-banner', 960, 9999); // width: 960 x autoHeight
